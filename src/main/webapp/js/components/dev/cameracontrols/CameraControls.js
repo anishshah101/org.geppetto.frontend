@@ -30,15 +30,15 @@ define(function(require) {
         },
 
         rotateUp: function() {
-            GEPPETTO.Console.executeCommand('G.incrementCameraRotate(-0.01, 0, 0)');
+            GEPPETTO.Console.executeCommand('G.incrementCameraRotate(0.01, 0, 0)');
         },
 
         rotateDown: function() {
-            GEPPETTO.Console.executeCommand('G.incrementCameraRotate(0, 0, 0.01)');
+            GEPPETTO.Console.executeCommand('G.incrementCameraRotate(-0.01, 0, 0)');
         },
 
         rotateLeft: function() {
-            GEPPETTO.Console.executeCommand('G.incrementCameraRotate(0.01, 0, 0)');
+            GEPPETTO.Console.executeCommand('G.incrementCameraRotate(0, 0, 0.01)');
         },
 
         rotateRight: function() {
