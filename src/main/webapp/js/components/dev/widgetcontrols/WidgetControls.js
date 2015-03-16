@@ -54,21 +54,14 @@ define(function(require) {
 
         render: function () {
             return (
-            	<div className="position-toolbar">
-                    <button className="btn squareB icon-chevron-left pan-left" onClick={this.panLeft}></button>
-                    <button className="btn squareB icon-chevron-up pan-top" onClick={this.panUp}></button>
-                    <button className="btn squareB icon-chevron-right pan-right" onClick={this.panRight}></button>
-                    <button className="btn squareB icon-chevron-down pan-bottom" onClick={this.panDown}></button>
-                    <button className="btn squareB icon-home pan-home" onClick={this.cameraHome}></button>
+            	<div className="widget-toolbar">
+                    <button className="btn squareB icon-chevron-left w1" onClick={this.w1}></button>
+                    <button className="btn squareB icon-chevron-left w1" onClick={this.w2}></button>
+                    <button className="btn squareB icon-chevron-up w2" onClick={this.w3}></button>
+                    <button className="btn squareB icon-chevron-right w3" onClick={this.w4}></button>
+                    <button className="btn squareB icon-chevron-down w4" onClick={this.w5}></button>
+                    <button className="btn squareB icon-home pan-home w5" onClick={this.w6}></button>
 
-                    <button className="btn squareB icon-undo rotate-left" onClick={this.rotateLeft}></button>
-                    <button className="btn squareB icon-repeat rotate90 rotate-top" onClick={this.rotateUp}></button>
-                    <button className="btn squareB icon-repeat rotate-right" onClick={this.rotateRight}></button>
-                    <button className="btn squareB icon-undo rotate90 rotate-bottom" onClick={this.rotateDown}></button>
-                    <button className="btn squareB icon-home rotate-home" onClick={this.cameraHome}></button>
-
-                    <button className="btn squareB icon-zoom-in zoom-in" onClick={this.zoomIn}></button>
-                    <button className="btn squareB icon-zoom-out zoom-out" onClick={this.zoomOut}></button>
                 </div>
 
             );
@@ -76,6 +69,6 @@ define(function(require) {
 
     });
 
-    React.renderComponent(Controls({},''), document.getElementById('camera-controls'));
+    React.renderComponent(Controls({},''), document.getElementById('widget-controls'));
 
 });
