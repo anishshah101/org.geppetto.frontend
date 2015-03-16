@@ -36,6 +36,10 @@ define(function(require) {
         w6: function() {
             GEPPETTO.Console.executeCommand('G.addWidget(5)');
         },
+        
+        w6: function() {
+            GEPPETTO.Console.executeCommand('G.addWidget(6)');
+        },
         	 
         componentDidMount: function() {
             GEPPETTO.on('start:tutorial', (function() {               
@@ -61,6 +65,7 @@ define(function(require) {
                     <button className="btn squareB w1" onClick={this.w4}>4</button>
                     <button className="btn squareB w1" onClick={this.w5}>5</button>
                     <button className="btn squareB w1" onClick={this.w6}>6</button>
+                    <button className="btn squareB w1" onClick={this.w7}>7</button>
 
                 </div>
 
