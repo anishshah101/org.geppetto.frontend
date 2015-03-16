@@ -55,12 +55,12 @@ define(function(require) {
         render: function () {
             return (
             	<div className="widgetcontrols">
-                    <button className="btn squareB icon-chevron-left w1" onClick={this.w1}></button>
-                    <button className="btn squareB icon-chevron-left w2" onClick={this.w2}></button>
-                    <button className="btn squareB icon-chevron-up w3" onClick={this.w3}></button>
-                    <button className="btn squareB icon-chevron-right w4" onClick={this.w4}></button>
-                    <button className="btn squareB icon-chevron-down w5" onClick={this.w5}></button>
-                    <button className="btn squareB icon-home pan-home w6" onClick={this.w6}></button>
+                    <button className="btn squareB w1" onClick={this.w1}>1</button>
+                    <button className="btn squareB w1" onClick={this.w2}>2</button>
+                    <button className="btn squareB w1" onClick={this.w3}>3</button>
+                    <button className="btn squareB w1" onClick={this.w4}>4</button>
+                    <button className="btn squareB w1" onClick={this.w5}>5</button>
+                    <button className="btn squareB w1" onClick={this.w6}>6</button>
 
                 </div>
 
