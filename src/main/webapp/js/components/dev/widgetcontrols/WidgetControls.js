@@ -39,7 +39,7 @@ define(function(require) {
         	 
         componentDidMount: function() {
             GEPPETTO.on('start:tutorial', (function() {               
-                GEPPETTO.once('tutorial:cameracontrols', (function(){
+                GEPPETTO.once('tutorial:widgetcontrols', (function(){
                     if(GEPPETTO.tutorialEnabled) {
                         this.showPopover;
                     }
@@ -54,13 +54,13 @@ define(function(require) {
 
         render: function () {
             return (
-            	<div className="widget-toolbar">
+            	<div className="widgetcontrols">
                     <button className="btn squareB icon-chevron-left w1" onClick={this.w1}></button>
-                    <button className="btn squareB icon-chevron-left w1" onClick={this.w2}></button>
-                    <button className="btn squareB icon-chevron-up w2" onClick={this.w3}></button>
-                    <button className="btn squareB icon-chevron-right w3" onClick={this.w4}></button>
-                    <button className="btn squareB icon-chevron-down w4" onClick={this.w5}></button>
-                    <button className="btn squareB icon-home pan-home w5" onClick={this.w6}></button>
+                    <button className="btn squareB icon-chevron-left w2" onClick={this.w2}></button>
+                    <button className="btn squareB icon-chevron-up w3" onClick={this.w3}></button>
+                    <button className="btn squareB icon-chevron-right w4" onClick={this.w4}></button>
+                    <button className="btn squareB icon-chevron-down w5" onClick={this.w5}></button>
+                    <button className="btn squareB icon-home pan-home w6" onClick={this.w6}></button>
 
                 </div>
 
@@ -69,6 +69,6 @@ define(function(require) {
 
     });
 
-    React.renderComponent(Controls({},''), document.getElementById('widget-controls'));
+    React.renderComponent(Controls({},''), document.getElementById('widget-toolbar'));
 
 });
